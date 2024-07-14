@@ -1,0 +1,1465 @@
+2024-07-14 14:05:05,490 INFO    StreamThr :2493502 [internal.py:wandb_internal():85] W&B internal server running at pid: 2493502, started at: 2024-07-14 14:05:05.488367
+2024-07-14 14:05:05,493 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status
+2024-07-14 14:05:05,511 INFO    WriterThread:2493502 [datastore.py:open_for_write():87] open: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/run-5qfo2not.wandb
+2024-07-14 14:05:05,513 DEBUG   SenderThread:2493502 [sender.py:send():378] send: header
+2024-07-14 14:05:05,557 DEBUG   SenderThread:2493502 [sender.py:send():378] send: run
+2024-07-14 14:05:06,038 INFO    SenderThread:2493502 [dir_watcher.py:__init__():211] watching files in: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files
+2024-07-14 14:05:06,038 INFO    SenderThread:2493502 [sender.py:_start_run_threads():1123] run started: 5qfo2not with start time 1720962305.505968
+2024-07-14 14:05:06,062 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: check_version
+2024-07-14 14:05:06,063 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: check_version
+2024-07-14 14:05:06,160 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: run_start
+2024-07-14 14:05:06,218 DEBUG   HandlerThread:2493502 [system_info.py:__init__():26] System info init
+2024-07-14 14:05:06,218 DEBUG   HandlerThread:2493502 [system_info.py:__init__():41] System info init done
+2024-07-14 14:05:06,218 INFO    HandlerThread:2493502 [system_monitor.py:start():194] Starting system monitor
+2024-07-14 14:05:06,219 INFO    SystemMonitor:2493502 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-14 14:05:06,219 INFO    HandlerThread:2493502 [system_monitor.py:probe():214] Collecting system info
+2024-07-14 14:05:06,221 INFO    SystemMonitor:2493502 [interfaces.py:start():188] Started cpu monitoring
+2024-07-14 14:05:06,223 INFO    SystemMonitor:2493502 [interfaces.py:start():188] Started disk monitoring
+2024-07-14 14:05:06,224 INFO    SystemMonitor:2493502 [interfaces.py:start():188] Started gpu monitoring
+2024-07-14 14:05:06,225 INFO    SystemMonitor:2493502 [interfaces.py:start():188] Started memory monitoring
+2024-07-14 14:05:06,227 INFO    SystemMonitor:2493502 [interfaces.py:start():188] Started network monitoring
+2024-07-14 14:05:06,233 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:06,233 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:06,239 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:06,239 DEBUG   HandlerThread:2493502 [system_info.py:probe():150] Probing system
+2024-07-14 14:05:06,241 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:06,242 DEBUG   HandlerThread:2493502 [system_info.py:_probe_git():135] Probing git
+2024-07-14 14:05:06,242 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:06,247 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:06,251 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:06,271 DEBUG   HandlerThread:2493502 [system_info.py:_probe_git():143] Probing git done
+2024-07-14 14:05:06,271 DEBUG   HandlerThread:2493502 [system_info.py:probe():198] Probing system done
+2024-07-14 14:05:06,271 DEBUG   HandlerThread:2493502 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-182-generic-x86_64-with-glibc2.31', 'python': '3.11.9', 'heartbeatAt': '2024-07-14T13:05:06.239691', 'startedAt': '2024-07-14T13:05:05.460998', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'git@github.com:JThh/neuronpedia.git', 'commit': 'ca465dbb54baaa09c29b07e0132b8e64ab8eda4d'}, 'email': 'julius.han@outlook.com', 'root': '/auto/users/ms23jh/Downloads/oatml/neuronpedia', 'host': 'clpc155.cs.ox.ac.uk', 'username': 'ms23jh', 'executable': '/scratch/ms23jh/conda_envs/llm/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 1132.454125, 'min': 800.0, 'max': 5000.0}, 'cpu_freq_per_core': [{'current': 1068.788, 'min': 800.0, 'max': 5000.0}, {'current': 967.643, 'min': 800.0, 'max': 5000.0}, {'current': 869.358, 'min': 800.0, 'max': 5000.0}, {'current': 831.402, 'min': 800.0, 'max': 5000.0}, {'current': 1359.986, 'min': 800.0, 'max': 5000.0}, {'current': 1127.524, 'min': 800.0, 'max': 5000.0}, {'current': 1120.339, 'min': 800.0, 'max': 5000.0}, {'current': 1474.123, 'min': 800.0, 'max': 5000.0}, {'current': 1376.37, 'min': 800.0, 'max': 5000.0}, {'current': 891.694, 'min': 800.0, 'max': 5000.0}, {'current': 1329.508, 'min': 800.0, 'max': 5000.0}, {'current': 1064.213, 'min': 800.0, 'max': 5000.0}, {'current': 1069.476, 'min': 800.0, 'max': 5000.0}, {'current': 1228.844, 'min': 800.0, 'max': 5000.0}, {'current': 1329.046, 'min': 800.0, 'max': 5000.0}, {'current': 1010.952, 'min': 800.0, 'max': 5000.0}], 'disk': {'/': {'total': 31.200942993164062, 'used': 16.30014419555664}}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 4, 'memory': {'total': 62.63249969482422}}
+2024-07-14 14:05:06,272 INFO    HandlerThread:2493502 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-14 14:05:06,272 INFO    HandlerThread:2493502 [system_monitor.py:probe():227] Publishing system info
+2024-07-14 14:05:06,272 DEBUG   HandlerThread:2493502 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-07-14 14:05:06,275 ERROR   HandlerThread:2493502 [system_info.py:_save_conda():221] Error saving conda packages: [Errno 2] No such file or directory: 'conda'
+Traceback (most recent call last):
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/internal/system/system_info.py", line 214, in _save_conda
+    subprocess.call(
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/subprocess.py", line 389, in call
+    with Popen(*popenargs, **kwargs) as p:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2024-07-14 14:05:06,278 DEBUG   HandlerThread:2493502 [system_info.py:_save_conda():222] Saving conda packages done
+2024-07-14 14:05:06,280 INFO    HandlerThread:2493502 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-14 14:05:06,291 DEBUG   SenderThread:2493502 [sender.py:send():378] send: files
+2024-07-14 14:05:06,291 INFO    SenderThread:2493502 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-07-14 14:05:06,805 INFO    wandb-upload_0:2493502 [upload_job.py:push():130] Uploaded file /tmp/tmp1si97etrwandb/gai5eflu-wandb-metadata.json
+2024-07-14 14:05:07,043 INFO    Thread-12 :2493502 [dir_watcher.py:_on_file_created():271] file/dir created: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/wandb-metadata.json
+2024-07-14 14:05:07,044 INFO    Thread-12 :2493502 [dir_watcher.py:_on_file_created():271] file/dir created: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/conda-environment.yaml
+2024-07-14 14:05:08,251 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:08,252 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:08,254 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:08,257 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:08,258 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:08,262 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:08,265 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:08,491 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-14 14:05:08,492 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: python_packages
+2024-07-14 14:05:08,496 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:05:08,496 DEBUG   SenderThread:2493502 [sender.py:send():378] send: telemetry
+2024-07-14 14:05:08,497 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:05:09,044 INFO    Thread-12 :2493502 [dir_watcher.py:_on_file_created():271] file/dir created: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/requirements.txt
+2024-07-14 14:05:10,266 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:10,266 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:10,269 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:10,270 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:10,271 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:10,275 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:10,279 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:10,713 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:05:12,279 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:12,279 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:12,282 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:12,284 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:12,284 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:12,288 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:12,291 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:14,292 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:14,292 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:14,294 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:14,296 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:14,297 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:14,301 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:14,305 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:15,713 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:05:16,306 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:16,306 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:16,309 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:16,311 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:16,311 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:16,314 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:16,318 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:18,318 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:18,318 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:18,320 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:18,322 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:18,323 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:18,326 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:18,329 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:20,329 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:20,329 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:20,332 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:20,334 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:20,335 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:20,338 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:20,341 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:20,714 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:05:22,341 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:22,342 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:22,344 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:22,348 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:22,349 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:22,354 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:22,359 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:23,492 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:05:23,494 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:05:24,362 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:24,363 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:24,365 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:24,367 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:24,368 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:24,371 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:24,374 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:26,375 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:26,375 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:26,377 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:26,379 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:26,380 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:26,383 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:26,387 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:26,627 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:05:28,387 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:28,387 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:28,390 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:28,391 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:28,392 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:28,396 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:28,400 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:30,400 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:30,401 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:30,403 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:30,405 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:30,406 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:30,410 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:30,413 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:31,628 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:05:32,414 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:32,414 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:32,417 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:32,419 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:32,419 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:32,422 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:32,425 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:34,426 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:34,426 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:34,428 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:34,430 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:34,431 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:34,434 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:34,437 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:36,437 ERROR   gpu       :2493502 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-07-14 14:05:36,438 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:36,438 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:36,441 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:36,442 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:36,443 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:36,447 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:36,450 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:36,634 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:05:37,081 INFO    Thread-12 :2493502 [dir_watcher.py:_on_file_modified():288] file/dir modified: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/config.yaml
+2024-07-14 14:05:38,083 INFO    Thread-12 :2493502 [dir_watcher.py:_on_file_created():271] file/dir created: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/output.log
+2024-07-14 14:05:38,451 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:38,451 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:38,454 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:38,456 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:38,456 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:38,461 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:38,464 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:38,492 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:05:38,494 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:05:40,086 INFO    Thread-12 :2493502 [dir_watcher.py:_on_file_modified():288] file/dir modified: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/output.log
+2024-07-14 14:05:40,465 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:40,465 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:40,468 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:40,470 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:40,470 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:40,473 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:40,476 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:42,477 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:42,477 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:42,479 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:42,481 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:42,482 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:42,485 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:42,489 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:42,712 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:05:44,489 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:44,489 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:44,492 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:44,494 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:44,495 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:44,498 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:44,502 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:46,503 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:46,503 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:46,505 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:46,507 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:46,508 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:46,511 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:46,515 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:47,712 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:05:48,516 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:48,516 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:48,518 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:48,520 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:48,521 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:48,525 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:48,528 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:50,529 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:50,529 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:50,532 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:50,534 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:50,534 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:50,538 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:50,541 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:52,542 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:52,542 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:52,545 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:52,547 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:52,547 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:52,550 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:52,553 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:52,713 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:05:53,492 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:05:53,494 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:05:54,554 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:54,554 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:54,556 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:54,558 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:54,559 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:54,562 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:54,565 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:56,566 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:56,566 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:56,569 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:56,571 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:56,571 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:56,575 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:56,579 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:58,579 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:58,579 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:58,582 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:58,584 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:58,585 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:58,588 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:58,591 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:05:58,631 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:06:00,591 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:00,592 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:00,594 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:00,596 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:00,597 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:00,600 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:00,603 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:02,604 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:02,604 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:02,606 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:02,608 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:02,609 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:02,612 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:02,615 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:03,632 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:06:04,616 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:04,616 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:04,619 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:04,621 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:04,621 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:04,624 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:04,627 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:06,227 DEBUG   SystemMonitor:2493502 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-14 14:06:06,229 DEBUG   SenderThread:2493502 [sender.py:send():378] send: stats
+2024-07-14 14:06:06,628 ERROR   gpu       :2493502 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-07-14 14:06:06,628 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:06,628 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:06,631 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:06,633 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:06,633 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:06,636 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:06,639 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:08,492 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:06:08,494 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:06:08,640 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:08,640 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:08,643 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:08,645 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:08,645 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:08,648 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:08,651 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:08,680 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:06:10,652 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:10,652 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:10,654 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:10,656 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:10,656 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:10,659 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:10,663 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:12,663 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:12,663 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:12,666 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:12,668 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:12,668 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:12,671 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:12,674 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:13,680 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:06:14,675 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:14,675 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:14,678 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:14,682 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:14,683 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:14,688 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:14,692 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:16,693 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:16,693 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:16,695 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:16,697 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:16,698 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:16,701 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:16,704 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:18,681 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:06:18,704 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:18,705 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:18,707 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:18,709 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:18,710 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:18,714 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:18,718 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:20,718 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:20,718 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:20,721 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:20,723 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:20,723 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:20,726 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:20,730 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:22,730 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:22,730 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:22,733 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:22,735 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:22,735 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:22,738 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:22,741 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:23,493 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:06:23,493 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:06:23,691 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:06:24,742 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:24,742 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:24,745 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:24,746 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:24,747 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:24,751 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:24,755 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:26,755 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:26,755 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:26,758 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:26,760 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:26,760 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:26,764 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:26,767 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:28,691 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:06:28,768 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:28,768 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:28,770 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:28,772 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:28,773 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:28,776 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:28,779 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:30,779 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:30,780 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:30,782 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:30,784 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:30,784 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:30,787 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:30,791 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:32,791 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:32,791 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:32,794 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:32,797 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:32,798 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:32,801 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:32,804 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:33,693 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:06:34,808 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:34,808 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:34,811 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:35,100 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:35,102 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:35,105 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:35,108 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:36,231 DEBUG   SenderThread:2493502 [sender.py:send():378] send: stats
+2024-07-14 14:06:37,109 ERROR   gpu       :2493502 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-07-14 14:06:37,109 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:37,109 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:37,112 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:37,114 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:37,114 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:37,117 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:37,120 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:38,493 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:06:38,494 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:06:38,699 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:06:39,121 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:39,121 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:39,124 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:39,125 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:39,126 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:39,129 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:39,132 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:41,133 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:41,133 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:41,135 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:41,137 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:41,137 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:41,141 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:41,144 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:43,145 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:43,145 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:43,147 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:43,149 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:43,150 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:43,154 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:43,157 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:43,700 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:06:45,157 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:45,158 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:45,160 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:45,162 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:45,163 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:45,166 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:45,170 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:47,170 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:47,170 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:47,173 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:47,175 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:47,176 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:47,179 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:47,182 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:48,701 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:06:49,182 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:49,183 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:49,185 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:49,187 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:49,188 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:49,191 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:49,195 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:51,195 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:51,195 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:51,198 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:51,200 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:51,201 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:51,204 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:51,208 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:53,208 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:53,208 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:53,211 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:53,213 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:53,213 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:53,216 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:53,219 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:53,493 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:06:53,494 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:06:54,662 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:06:55,220 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:55,220 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:55,222 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:55,224 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:55,224 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:55,228 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:55,231 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:57,231 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:57,232 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:57,234 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:57,236 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:57,237 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:57,240 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:57,243 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:59,244 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:59,244 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:59,247 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:59,248 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:59,249 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:59,253 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:59,256 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:06:59,663 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:07:01,256 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:01,257 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:01,259 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:01,261 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:01,262 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:01,265 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:01,268 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:03,269 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:03,269 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:03,271 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:03,273 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:03,274 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:03,277 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:03,281 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:04,664 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:07:05,281 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:05,281 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:05,284 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:05,286 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:05,286 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:05,290 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:05,294 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:06,232 DEBUG   SenderThread:2493502 [sender.py:send():378] send: stats
+2024-07-14 14:07:07,294 ERROR   gpu       :2493502 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-07-14 14:07:07,294 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:07,295 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:07,297 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:07,299 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:07,300 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:07,303 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:07,306 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:08,493 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:07:08,495 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:07:09,307 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:09,307 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:09,310 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:09,312 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:09,312 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:09,315 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:09,318 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:09,722 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:07:11,319 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:11,319 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:11,322 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:11,324 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:11,324 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:11,327 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:11,331 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:13,331 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:13,331 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:13,334 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:13,336 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:13,336 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:13,339 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:13,342 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:14,722 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:07:15,343 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:15,343 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:15,346 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:15,348 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:15,348 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:15,352 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:15,355 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:17,355 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:17,355 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:17,358 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:17,360 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:17,361 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:17,364 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:17,367 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:19,367 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:19,367 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:19,370 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:19,371 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:19,372 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:19,375 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:19,378 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:19,724 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:07:21,379 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:21,379 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:21,382 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:21,384 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:21,384 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:21,388 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:21,392 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:23,392 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:23,393 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:23,395 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:23,397 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:23,398 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:23,401 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:23,405 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:23,493 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:07:23,494 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:07:25,405 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:25,405 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:25,408 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:25,410 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:25,410 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:25,413 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:25,416 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:25,709 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:07:27,417 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:27,417 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:27,420 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:27,422 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:27,422 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:27,426 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:27,430 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:29,430 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:29,431 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:29,433 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:29,435 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:29,436 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:29,439 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:29,442 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:30,710 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:07:31,443 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:31,443 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:31,445 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:31,447 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:31,448 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:31,451 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:31,454 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:33,454 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:33,455 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:33,457 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:33,459 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:33,460 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:33,463 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:33,466 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:35,467 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:35,467 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:35,470 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:35,471 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:35,472 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:35,475 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:35,479 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:35,711 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:07:36,233 DEBUG   SenderThread:2493502 [sender.py:send():378] send: stats
+2024-07-14 14:07:37,479 ERROR   gpu       :2493502 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-07-14 14:07:37,479 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:37,480 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:37,482 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:37,484 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:37,484 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:37,487 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:37,490 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:38,493 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:07:38,495 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:07:39,491 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:39,491 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:39,494 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:39,496 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:39,496 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:39,500 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:39,503 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:41,504 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:41,504 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:41,506 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:41,508 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:41,509 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:41,512 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:41,515 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:41,672 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:07:43,515 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:43,516 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:43,518 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:43,520 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:43,521 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:43,524 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:43,528 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:45,528 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:45,528 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:45,531 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:45,533 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:45,533 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:45,536 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:45,540 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:46,673 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:07:47,540 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:47,540 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:47,543 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:47,545 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:47,546 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:47,549 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:47,553 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:49,553 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:49,554 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:49,556 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:49,558 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:49,559 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:49,562 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:49,566 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:51,566 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:51,566 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:51,569 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:51,571 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:51,571 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:51,574 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:51,577 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:51,673 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:07:53,493 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:07:53,495 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:07:53,578 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:53,578 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:53,581 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:53,583 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:53,583 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:53,586 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:53,590 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:55,590 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:55,590 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:55,592 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:55,594 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:55,595 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:55,597 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:55,601 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:57,601 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:57,601 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:57,604 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:57,606 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:57,606 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:57,609 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:57,612 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:57,625 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:07:59,613 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:59,613 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:59,616 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:59,618 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:59,618 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:59,621 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:07:59,624 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:01,625 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:01,625 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:01,627 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:01,629 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:01,630 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:01,633 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:01,636 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:02,626 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:08:03,637 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:03,637 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:03,640 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:03,642 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:03,643 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:03,645 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:03,649 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:05,649 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:05,649 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:05,652 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:05,654 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:05,655 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:05,658 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:05,662 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:06,234 DEBUG   SenderThread:2493502 [sender.py:send():378] send: stats
+2024-07-14 14:08:07,662 ERROR   gpu       :2493502 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-07-14 14:08:07,663 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:07,663 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:07,666 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:07,667 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:07,668 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:07,671 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:07,674 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:08,235 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:08:08,494 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:08:08,495 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:08:09,675 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:09,675 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:09,678 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:09,680 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:09,680 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:09,684 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:09,687 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:11,687 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:11,687 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:11,690 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:11,692 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:11,693 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:11,696 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:11,700 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:13,629 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:08:13,700 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:13,700 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:13,703 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:13,704 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:13,705 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:13,708 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:13,712 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:15,712 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:15,713 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:15,715 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:15,717 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:15,718 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:15,721 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:15,724 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:17,724 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:17,724 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:17,727 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:17,729 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:17,729 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:17,732 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:17,735 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:18,630 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:08:19,736 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:19,736 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:19,739 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:19,741 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:19,741 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:19,745 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:19,749 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:21,749 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:21,750 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:21,752 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:21,754 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:21,755 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:21,758 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:21,761 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:23,494 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:08:23,495 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:08:23,729 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:08:23,761 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:23,761 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:23,764 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:23,766 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:23,767 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:23,770 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:23,773 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:25,774 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:25,774 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:25,777 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:25,779 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:25,779 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:25,782 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:25,785 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:27,786 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:27,786 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:27,788 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:27,790 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:27,790 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:27,793 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:27,797 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:28,730 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:08:29,797 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:29,797 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:29,800 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:29,802 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:29,802 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:29,805 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:29,808 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:31,809 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:31,809 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:31,812 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:31,814 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:31,814 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:31,817 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:31,821 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:33,731 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:08:33,822 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:33,822 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:33,824 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:33,826 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:33,827 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:33,830 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:33,834 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:35,834 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:35,834 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:35,837 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:35,839 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:35,840 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:35,843 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:35,846 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:36,235 DEBUG   SenderThread:2493502 [sender.py:send():378] send: stats
+2024-07-14 14:08:37,846 ERROR   gpu       :2493502 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-07-14 14:08:37,847 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:37,847 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:37,850 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:37,851 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:37,852 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:37,855 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:37,859 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:38,494 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:08:38,494 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:08:39,679 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:08:39,859 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:39,859 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:39,862 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:39,864 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:39,864 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:39,867 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:39,870 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:41,871 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:41,871 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:41,873 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:41,875 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:41,876 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:41,879 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:41,883 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:43,883 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:43,883 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:43,886 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:43,888 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:43,888 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:43,891 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:43,894 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:44,680 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:08:45,895 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:45,895 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:45,898 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:45,900 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:45,900 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:45,904 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:45,908 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:47,908 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:47,909 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:47,911 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:47,913 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:47,914 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:47,917 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:47,920 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:49,681 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:08:49,920 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:49,921 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:49,923 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:49,925 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:49,926 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:49,929 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:49,932 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:51,932 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:51,933 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:51,935 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:51,937 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:51,937 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:51,940 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:51,943 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:53,494 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:08:53,495 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:08:53,944 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:53,944 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:53,946 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:53,948 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:53,949 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:53,952 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:53,956 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:54,722 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:08:55,956 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:55,957 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:55,959 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:55,961 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:55,962 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:55,965 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:55,969 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:57,969 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:57,970 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:57,972 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:57,974 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:57,975 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:57,978 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:57,981 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:59,723 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:08:59,982 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:59,982 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:59,984 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:59,986 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:59,986 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:59,989 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:08:59,993 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:01,993 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:01,994 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:01,996 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:01,998 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:01,999 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:02,003 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:02,006 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:04,007 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:04,007 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:04,009 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:04,011 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:04,012 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:04,014 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:04,018 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:04,724 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:09:06,018 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:06,018 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:06,020 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:06,022 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:06,023 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:06,026 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:06,029 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:06,236 DEBUG   SenderThread:2493502 [sender.py:send():378] send: stats
+2024-07-14 14:09:08,029 ERROR   gpu       :2493502 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-07-14 14:09:08,029 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:08,029 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:08,033 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:08,034 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:08,035 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:08,038 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:08,041 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:08,494 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:09:08,494 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:09:10,042 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:10,042 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:10,044 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:10,047 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:10,049 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:10,052 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:10,056 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:10,627 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:09:12,056 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:12,056 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:12,058 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:12,060 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:12,061 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:12,064 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:12,067 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:14,067 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:14,067 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:14,070 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:14,071 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:14,072 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:14,075 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:14,079 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:15,627 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:09:16,079 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:16,079 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:16,081 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:16,083 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:16,083 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:16,086 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:16,090 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:18,090 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:18,090 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:18,092 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:18,094 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:18,095 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:18,098 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:18,101 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:20,101 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:20,101 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:20,104 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:20,105 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:20,106 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:20,109 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:20,112 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:20,628 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:09:22,112 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:22,112 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:22,115 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:22,116 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:22,117 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:22,120 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:22,123 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:23,494 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:09:23,494 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:09:24,123 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:24,124 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:24,126 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:24,128 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:24,128 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:24,131 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:24,134 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:25,663 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:09:26,135 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:26,135 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:26,137 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:26,139 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:26,140 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:26,144 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:26,147 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:28,147 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:28,148 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:28,150 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:28,152 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:28,153 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:28,156 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:28,159 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:30,160 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:30,160 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:30,162 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:30,164 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:30,165 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:30,168 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:30,171 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:30,664 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:09:32,172 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:32,172 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:32,174 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:32,176 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:32,177 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:32,179 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:32,183 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:34,183 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:34,183 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:34,186 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:34,188 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:34,189 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:34,192 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:34,196 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:35,665 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:09:36,197 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:36,197 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:36,199 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:36,201 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:36,202 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:36,206 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:36,209 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:36,237 DEBUG   SenderThread:2493502 [sender.py:send():378] send: stats
+2024-07-14 14:09:38,210 ERROR   gpu       :2493502 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-07-14 14:09:38,210 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:38,211 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:38,213 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:38,215 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:38,216 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:38,220 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:38,223 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:38,494 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:09:38,496 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:09:40,224 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:40,224 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:40,227 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:40,229 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:40,229 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:40,233 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:40,236 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:41,636 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:09:42,236 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:42,237 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:42,239 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:42,241 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:42,242 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:42,245 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:42,248 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:44,248 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:44,249 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:44,251 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:44,253 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:44,254 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:44,257 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:44,260 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:46,260 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:46,260 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:46,263 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:46,264 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:46,265 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:46,268 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:46,271 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:46,637 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:09:48,271 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:48,272 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:48,274 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:48,276 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:48,277 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:48,280 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:48,284 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:50,284 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:50,284 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:50,286 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:50,288 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:50,289 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:50,292 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:50,296 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:51,638 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:09:52,296 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:52,296 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:52,299 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:52,301 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:52,301 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:52,304 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:52,308 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:53,495 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:09:53,496 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:09:54,308 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:54,308 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:54,310 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:54,312 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:54,313 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:54,316 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:54,319 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:56,319 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:56,319 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:56,322 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:56,323 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:56,324 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:56,327 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:56,330 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:56,719 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:09:58,330 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:58,330 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:58,333 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:58,335 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:58,335 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:58,338 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:09:58,341 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:00,341 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:00,341 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:00,344 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:00,345 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:00,346 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:00,349 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:00,352 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:01,720 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:10:02,352 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:02,352 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:02,355 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:02,357 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:02,357 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:02,360 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:02,363 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:04,363 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:04,363 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:04,366 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:04,368 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:04,368 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:04,372 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:04,375 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:06,238 DEBUG   SenderThread:2493502 [sender.py:send():378] send: stats
+2024-07-14 14:10:06,375 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:06,375 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:06,377 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:06,379 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:06,380 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:06,383 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:06,386 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:07,239 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:10:08,386 ERROR   gpu       :2493502 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-07-14 14:10:08,386 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:08,387 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:08,389 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:08,391 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:08,392 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:08,394 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:08,398 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:08,495 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:10:08,496 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:10:10,398 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:10,398 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:10,400 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:10,402 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:10,403 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:10,405 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:10,409 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:12,409 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:12,409 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:12,411 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:12,413 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:12,414 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:12,417 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:12,420 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:12,703 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:10:14,420 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:14,421 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:14,423 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:14,425 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:14,426 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:14,429 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:14,432 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:16,433 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:16,433 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:16,435 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:16,437 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:16,438 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:16,441 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:16,444 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:17,704 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:10:18,445 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:18,445 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:18,447 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:18,449 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:18,450 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:18,454 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:18,457 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:20,458 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:20,458 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:20,460 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:20,462 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:20,462 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:20,466 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:20,469 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:22,470 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:22,470 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:22,473 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:22,475 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:22,475 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:22,478 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:22,481 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:22,705 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:10:23,495 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-14 14:10:23,496 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: stop_status
+2024-07-14 14:10:24,482 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:24,482 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:24,484 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:24,486 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:24,487 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:24,491 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:24,494 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:26,494 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:26,495 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:26,497 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:26,499 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:26,500 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:26,503 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:26,507 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:28,507 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:28,507 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:28,510 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:28,512 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:28,512 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:28,515 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:28,518 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:28,673 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:10:30,518 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:30,518 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:30,521 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:30,522 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:30,523 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:30,526 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:30,529 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:32,529 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:32,529 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:32,532 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:32,534 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:32,534 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:32,537 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:32,540 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:33,674 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:10:34,540 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:34,541 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:34,543 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:34,545 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:34,545 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:34,548 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:34,551 ERROR   gpu       :2493502 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-14 14:10:36,238 DEBUG   SenderThread:2493502 [sender.py:send():378] send: stats
+2024-07-14 14:10:36,491 DEBUG   SenderThread:2493502 [sender.py:send():378] send: exit
+2024-07-14 14:10:36,491 INFO    SenderThread:2493502 [sender.py:send_exit():585] handling exit code: 1
+2024-07-14 14:10:36,491 INFO    SenderThread:2493502 [sender.py:send_exit():587] handling runtime: 330
+2024-07-14 14:10:36,500 INFO    SenderThread:2493502 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-07-14 14:10:36,500 INFO    SenderThread:2493502 [sender.py:send_exit():593] send defer
+2024-07-14 14:10:36,500 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: defer
+2024-07-14 14:10:36,500 INFO    HandlerThread:2493502 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-14 14:10:36,501 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: defer
+2024-07-14 14:10:36,501 INFO    SenderThread:2493502 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-07-14 14:10:36,501 INFO    SenderThread:2493502 [sender.py:transition_state():613] send defer: 1
+2024-07-14 14:10:36,501 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: defer
+2024-07-14 14:10:36,501 INFO    HandlerThread:2493502 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-14 14:10:36,501 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: defer
+2024-07-14 14:10:36,501 INFO    SenderThread:2493502 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-07-14 14:10:36,501 INFO    SenderThread:2493502 [sender.py:transition_state():613] send defer: 2
+2024-07-14 14:10:36,502 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: defer
+2024-07-14 14:10:36,502 INFO    HandlerThread:2493502 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-14 14:10:36,502 INFO    HandlerThread:2493502 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-14 14:10:36,502 DEBUG   SystemMonitor:2493502 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-14 14:10:36,503 DEBUG   SystemMonitor:2493502 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-14 14:10:36,503 ERROR   gpu       :2493502 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-07-14 14:10:36,502 INFO    HandlerThread:2493502 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-14 14:10:36,504 INFO    HandlerThread:2493502 [interfaces.py:finish():200] Joined disk monitor
+2024-07-14 14:10:36,504 INFO    HandlerThread:2493502 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-14 14:10:36,504 INFO    HandlerThread:2493502 [interfaces.py:finish():200] Joined memory monitor
+2024-07-14 14:10:36,505 INFO    HandlerThread:2493502 [interfaces.py:finish():200] Joined network monitor
+2024-07-14 14:10:36,505 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: defer
+2024-07-14 14:10:36,505 INFO    SenderThread:2493502 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-07-14 14:10:36,505 INFO    SenderThread:2493502 [sender.py:transition_state():613] send defer: 3
+2024-07-14 14:10:36,505 DEBUG   SenderThread:2493502 [sender.py:send():378] send: stats
+2024-07-14 14:10:36,505 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: defer
+2024-07-14 14:10:36,505 INFO    HandlerThread:2493502 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-14 14:10:36,506 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: defer
+2024-07-14 14:10:36,506 INFO    SenderThread:2493502 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-07-14 14:10:36,506 INFO    SenderThread:2493502 [sender.py:transition_state():613] send defer: 4
+2024-07-14 14:10:36,506 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: defer
+2024-07-14 14:10:36,506 INFO    HandlerThread:2493502 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-14 14:10:36,506 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: defer
+2024-07-14 14:10:36,506 INFO    SenderThread:2493502 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-07-14 14:10:36,506 INFO    SenderThread:2493502 [sender.py:transition_state():613] send defer: 5
+2024-07-14 14:10:36,507 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: defer
+2024-07-14 14:10:36,507 INFO    HandlerThread:2493502 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-14 14:10:36,507 DEBUG   SenderThread:2493502 [sender.py:send():378] send: summary
+2024-07-14 14:10:36,509 INFO    SenderThread:2493502 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-07-14 14:10:36,509 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: defer
+2024-07-14 14:10:36,509 INFO    SenderThread:2493502 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-07-14 14:10:36,509 INFO    SenderThread:2493502 [sender.py:transition_state():613] send defer: 6
+2024-07-14 14:10:36,509 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: defer
+2024-07-14 14:10:36,509 INFO    HandlerThread:2493502 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-14 14:10:36,510 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: defer
+2024-07-14 14:10:36,510 INFO    SenderThread:2493502 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-07-14 14:10:36,510 INFO    SenderThread:2493502 [sender.py:transition_state():613] send defer: 7
+2024-07-14 14:10:36,510 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: status_report
+2024-07-14 14:10:36,510 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: defer
+2024-07-14 14:10:36,510 INFO    HandlerThread:2493502 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-14 14:10:36,510 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: defer
+2024-07-14 14:10:36,510 INFO    SenderThread:2493502 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-07-14 14:10:37,260 INFO    SenderThread:2493502 [sender.py:transition_state():613] send defer: 8
+2024-07-14 14:10:37,260 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: defer
+2024-07-14 14:10:37,260 INFO    HandlerThread:2493502 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-14 14:10:37,260 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: defer
+2024-07-14 14:10:37,260 INFO    SenderThread:2493502 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-07-14 14:10:37,260 INFO    SenderThread:2493502 [job_builder.py:build():432] Attempting to build job artifact
+2024-07-14 14:10:37,262 INFO    SenderThread:2493502 [job_builder.py:_get_source_type():565] is repo sourced job
+2024-07-14 14:10:37,262 WARNING SenderThread:2493502 [job_builder.py:_log_if_verbose():267] No program path found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+2024-07-14 14:10:37,262 INFO    SenderThread:2493502 [sender.py:transition_state():613] send defer: 9
+2024-07-14 14:10:37,262 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: defer
+2024-07-14 14:10:37,262 INFO    HandlerThread:2493502 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-14 14:10:37,262 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: defer
+2024-07-14 14:10:37,262 INFO    SenderThread:2493502 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-07-14 14:10:37,262 INFO    SenderThread:2493502 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-14 14:10:37,373 INFO    Thread-12 :2493502 [dir_watcher.py:_on_file_modified():288] file/dir modified: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/output.log
+2024-07-14 14:10:37,374 INFO    SenderThread:2493502 [dir_watcher.py:_on_file_created():271] file/dir created: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/wandb-summary.json
+2024-07-14 14:10:37,374 INFO    SenderThread:2493502 [dir_watcher.py:finish():388] scan: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files
+2024-07-14 14:10:37,375 INFO    SenderThread:2493502 [dir_watcher.py:finish():402] scan save: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/config.yaml config.yaml
+2024-07-14 14:10:37,375 INFO    SenderThread:2493502 [dir_watcher.py:finish():402] scan save: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/conda-environment.yaml conda-environment.yaml
+2024-07-14 14:10:37,375 INFO    SenderThread:2493502 [dir_watcher.py:finish():402] scan save: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/wandb-metadata.json wandb-metadata.json
+2024-07-14 14:10:37,375 INFO    SenderThread:2493502 [dir_watcher.py:finish():402] scan save: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/requirements.txt requirements.txt
+2024-07-14 14:10:37,375 INFO    SenderThread:2493502 [dir_watcher.py:finish():402] scan save: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/output.log output.log
+2024-07-14 14:10:37,375 INFO    SenderThread:2493502 [dir_watcher.py:finish():402] scan save: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/wandb-summary.json wandb-summary.json
+2024-07-14 14:10:37,375 INFO    SenderThread:2493502 [sender.py:transition_state():613] send defer: 10
+2024-07-14 14:10:37,375 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: defer
+2024-07-14 14:10:37,377 INFO    HandlerThread:2493502 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-14 14:10:37,378 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: defer
+2024-07-14 14:10:37,378 INFO    SenderThread:2493502 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-07-14 14:10:37,378 INFO    SenderThread:2493502 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-14 14:10:37,491 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-14 14:10:37,491 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: poll_exit
+2024-07-14 14:10:37,744 INFO    wandb-upload_1:2493502 [upload_job.py:push():130] Uploaded file /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/config.yaml
+2024-07-14 14:10:37,823 INFO    wandb-upload_3:2493502 [upload_job.py:push():130] Uploaded file /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/wandb-summary.json
+2024-07-14 14:10:37,823 INFO    wandb-upload_0:2493502 [upload_job.py:push():130] Uploaded file /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/output.log
+2024-07-14 14:10:37,832 INFO    wandb-upload_2:2493502 [upload_job.py:push():130] Uploaded file /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/files/requirements.txt
+2024-07-14 14:10:38,032 INFO    Thread-11 (_thread_body):2493502 [sender.py:transition_state():613] send defer: 11
+2024-07-14 14:10:38,032 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: defer
+2024-07-14 14:10:38,033 INFO    HandlerThread:2493502 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-14 14:10:38,033 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: defer
+2024-07-14 14:10:38,033 INFO    SenderThread:2493502 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-07-14 14:10:38,033 INFO    SenderThread:2493502 [file_pusher.py:join():175] waiting for file pusher
+2024-07-14 14:10:38,033 INFO    SenderThread:2493502 [sender.py:transition_state():613] send defer: 12
+2024-07-14 14:10:38,034 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: defer
+2024-07-14 14:10:38,034 INFO    HandlerThread:2493502 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-14 14:10:38,034 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: defer
+2024-07-14 14:10:38,034 INFO    SenderThread:2493502 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-07-14 14:10:38,034 INFO    SenderThread:2493502 [file_stream.py:finish():601] file stream finish called
+2024-07-14 14:10:38,401 INFO    SenderThread:2493502 [file_stream.py:finish():605] file stream finish is done
+2024-07-14 14:10:38,401 INFO    SenderThread:2493502 [sender.py:transition_state():613] send defer: 13
+2024-07-14 14:10:38,401 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: defer
+2024-07-14 14:10:38,401 INFO    HandlerThread:2493502 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-14 14:10:38,401 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: defer
+2024-07-14 14:10:38,401 INFO    SenderThread:2493502 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-07-14 14:10:38,401 INFO    SenderThread:2493502 [sender.py:transition_state():613] send defer: 14
+2024-07-14 14:10:38,402 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: defer
+2024-07-14 14:10:38,402 INFO    HandlerThread:2493502 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-14 14:10:38,402 DEBUG   SenderThread:2493502 [sender.py:send():378] send: final
+2024-07-14 14:10:38,402 DEBUG   SenderThread:2493502 [sender.py:send():378] send: footer
+2024-07-14 14:10:38,402 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: defer
+2024-07-14 14:10:38,402 INFO    SenderThread:2493502 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-07-14 14:10:38,403 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-14 14:10:38,403 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: poll_exit
+2024-07-14 14:10:38,403 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-14 14:10:38,403 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: server_info
+2024-07-14 14:10:38,403 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-14 14:10:38,403 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: poll_exit
+2024-07-14 14:10:38,404 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-14 14:10:38,404 DEBUG   SenderThread:2493502 [sender.py:send_request():405] send_request: server_info
+2024-07-14 14:10:38,404 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-14 14:10:38,524 INFO    MainThread:2493502 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-07-14 14:10:38,524 INFO    MainThread:2493502 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-07-14 14:10:38,524 INFO    MainThread:2493502 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2024-07-14 14:10:38,524 DEBUG   HandlerThread:2493502 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-14 14:10:38,525 INFO    HandlerThread:2493502 [handler.py:finish():882] shutting down handler
+2024-07-14 14:10:39,404 INFO    WriterThread:2493502 [datastore.py:close():296] close: /auto/users/ms23jh/Downloads/oatml/neuronpedia/wandb/run-20240714_140505-5qfo2not/run-5qfo2not.wandb
+2024-07-14 14:10:39,524 INFO    SenderThread:2493502 [sender.py:finish():1545] shutting down sender
+2024-07-14 14:10:39,524 INFO    SenderThread:2493502 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-14 14:10:39,524 INFO    SenderThread:2493502 [file_pusher.py:join():175] waiting for file pusher

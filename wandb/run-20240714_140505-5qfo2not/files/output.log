@@ -1,0 +1,89 @@
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Unable to write to /scratch-ssd/oatml/wandb/artifacts. Ensure that the current user has write permissions.
+Traceback (most recent call last):
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact_file_cache.py", line 212, in _ensure_write_permissions
+    with NamedTemporaryFile(dir=self._temp_dir) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/tempfile.py", line 580, in NamedTemporaryFile
+    file = _io.open(dir, mode, buffering=buffering,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/tempfile.py", line 577, in opener
+    fd, name = _mkstemp_inner(dir, prefix, suffix, flags, output_type)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/tempfile.py", line 257, in _mkstemp_inner
+    fd = _os.open(file, flags, 0o600)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/scratch-ssd/oatml/wandb/artifacts/tmp/tmpq56rnxi1'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/apis/public/api.py", line 975, in artifact
+    artifact = wandb.Artifact._from_name(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py", line 272, in _from_name
+    return cls._from_attrs(entity, project, name, attrs, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py", line 284, in _from_attrs
+    artifact = cls("placeholder", type="placeholder")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py", line 151, in __init__
+    self._storage_policy = storage_policy_cls.from_config(config=policy_config)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/artifacts/storage_policies/wandb_storage_policy.py", line 69, in from_config
+    return cls(config=config, api=api)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/artifacts/storage_policies/wandb_storage_policy.py", line 77, in __init__
+    self._cache = cache or get_artifact_file_cache()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact_file_cache.py", line 228, in get_artifact_file_cache
+    _artifact_file_cache = ArtifactFileCache(cache_dir)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact_file_cache.py", line 37, in __init__
+    self._ensure_write_permissions()
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact_file_cache.py", line 215, in _ensure_write_permissions
+    raise PermissionError(
+PermissionError: Unable to write to /scratch-ssd/oatml/wandb/artifacts. Ensure that the current user has write permissions.
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 400, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 390, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2930, in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/apis/public/api.py", line 975, in artifact
+    artifact = wandb.Artifact._from_name(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py", line 272, in _from_name
+    return cls._from_attrs(entity, project, name, attrs, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py", line 284, in _from_attrs
+    artifact = cls("placeholder", type="placeholder")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py", line 151, in __init__
+    self._storage_policy = storage_policy_cls.from_config(config=policy_config)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/artifacts/storage_policies/wandb_storage_policy.py", line 69, in from_config
+    return cls(config=config, api=api)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/artifacts/storage_policies/wandb_storage_policy.py", line 77, in __init__
+    self._cache = cache or get_artifact_file_cache()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact_file_cache.py", line 228, in get_artifact_file_cache
+    _artifact_file_cache = ArtifactFileCache(cache_dir)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact_file_cache.py", line 37, in __init__
+    self._ensure_write_permissions()
+  File "/scratch/ms23jh/conda_envs/llm/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact_file_cache.py", line 215, in _ensure_write_permissions
+    raise PermissionError(
+wandb.errors.CommError: Unable to write to /scratch-ssd/oatml/wandb/artifacts. Ensure that the current user has write permissions.
